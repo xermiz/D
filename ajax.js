@@ -4,8 +4,8 @@ function ajax(s,i,u,a,m){
 	  s - cadena de this.value
 		i - id de la etiqueta a modificar por la respuesta del ajax
 		u - url destino en busca de una respuesta
-		a - Asyncrónico o no
-		m - metodo GET o POST*/
+		a - Asincrónico o no
+		m - método GET o POST*/
 	var con;
 	if (s==""){
 		document.getElementById(i).innerHTML="";
@@ -29,5 +29,5 @@ function ajax(s,i,u,a,m){
 	con.send();	
 }
 
-//Cuando valle a llamar la función la llamo de esta manera y me devuelve una lista de paises metiendola dontro del div de id="paises"
+//Cuando tenga que llamar a la función, la llamo de esta manera y me devuelve una lista de países metiéndola dentro del div de id="paises"
 ajax("1","paises","../../paises/getPaises",true,"GET");
